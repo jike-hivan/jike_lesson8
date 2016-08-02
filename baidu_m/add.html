@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>新闻管理系统</title>
+  <script type="text/javascript" src="js/sea.js"></script>
+</head>
+
+<body>
+  <form action="add.php">
+    <p>
+      <label for="newstitle">新闻标题</label>
+      <input type="text" name="newstitle" id="newstitle">
+    </p>
+    <p>
+      <label for="newsimg">图片地址</label>
+      <input type="text" name="newsimg" id="newsimg">
+    </p>
+    <p>
+      <label for="newscontent">新闻内容</label>
+      <textarea cols="30" rows="10" name="newscontent" id="newscontent"></textarea>
+    </p>
+    <p>
+      <label for="addtime">发布时间</label>
+      <input type="date" name="addtime" id="addtime">
+    </p>
+    <p>
+      <input type="submit" value="submit" id="addSql">
+      <input type="reset" value="reset" id="resetSql">
+      <p id="feedback" style="margin-top:20px;"></p>
+    </p>
+  </form>
+  <script type="text/javascript">
+  seajs.config({
+    base: './js',
+  })
+  seajs.use('main');
+  </script>
+</body>
+
+</html>
